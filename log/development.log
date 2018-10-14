@@ -569,3 +569,15 @@ Started GET "/songs/new" for 216.113.160.68 at 2018-10-14 18:53:09 +0000
 Cannot render console from 216.113.160.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by SongsController#new as HTML
   Rendered songs/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/songs" for 216.113.160.68 at 2018-10-14 18:53:16 +0000
+Cannot render console from 216.113.160.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BgqFBkpxskw/Rb0U2vqTHmhb32LPK6A0DWL1qoPtfCJ6857JZNzyOKYyRSlgSF/ZcU88ux/S8h599jVl/qoLmw==", "song"=>{"title"=>"brainstew", "artist_name"=>"green day"}, "commit"=>"Create Song"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "brainstew"], ["created_at", "2018-10-14 18:53:16.908435"], ["updated_at", "2018-10-14 18:53:16.908435"]]
+  [1m[36m (37.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://165.227.60.187:39835/songs/3
+Completed 302 Found in 42ms (ActiveRecord: 38.5ms)
