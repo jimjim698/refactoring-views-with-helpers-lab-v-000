@@ -563,3 +563,9 @@ Processing by ArtistsController#show as HTML
   Parameters: {"id"=>"1"}
   Rendered artists/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs/new" for 216.113.160.68 at 2018-10-14 18:53:09 +0000
+Cannot render console from 216.113.160.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#new as HTML
+  Rendered songs/new.html.erb within layouts/application (14.0ms)
